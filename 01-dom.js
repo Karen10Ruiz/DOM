@@ -105,7 +105,7 @@ console.log(parrafos)
 */
 
 let subtitle = document.querySelector(".subtitle");
-console,log(subtitle.innertext);
+//console,log(subtitle.innertext);
 console.log(subtitle.textContent);
 
 /*
