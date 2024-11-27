@@ -2,7 +2,7 @@
 
 /*
 
-    Seleccionar el elemento H1 a través de su clalse
+    Seleccionar el elemento H1 a través de su clase
 
 */
 
