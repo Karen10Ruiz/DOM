@@ -104,3 +104,60 @@ Asignamos el valor al elemento seleccionado incluyendo las etiquetas HTML
 
 titulo.innerHTML = " Amigos <span> todos los ponys <span>";
 lista.innerHTML = `<li>AppleJack<li> <li class"oculto">Rarity<li>`;
+
+/*
+
+    getAttribute()
+
+    Devuelve el valor del atributo del elemento que le indiquemos.
+
+    elemento.getAttribute(atributo)
+
+*/
+
+const enlace = document.getElementsByTagName("a");
+
+console.log(enlace[0].getAttribute("href"));
+
+/*
+
+    removeAttribute()
+
+    Elimina el cvalor del atributo de un elemento.
+
+    elemento.removeAttribute(atributo)
+
+*/
+
+enlace[0].removeAttribute("href");
+
+console.log(enlace[0].getAttribute("href"));
+
+/*
+
+    setAttribute
+
+    Asigna un atributo y un valor a un elemento.
+
+    elemento.setAttribute(atributo, valor)
+
+    -Sobreescribir un nuevo tributo declarado.
+    -Crea un nuevo atributo y su valor.
+
+*/
+
+enlace[0].setAttribute("href", "https://www.roblox.com");
+
+console.log(enlace[0].getAttribute("href"));
+
+/* Antes */
+
+console.log(enlace[0].getAttribute("target"));
+
+enlace[0].setAttribute("target", "_blank");
+
+/*Despues */
+
+console.log(enlace[0].getAttribute("target"));
+
+/* Commit -m "Terminamos textos y atributos del DOM" */
