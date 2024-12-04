@@ -1,0 +1,53 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: darkslateblue;
+    color: whitesmoke;
+    padding: 24px;
+    max-width: 400px;
+    border-radius: 12px;
+}
+
+.subtitle {
+    font-size: 32px;
+    margin-bottom: 24px;
+    color: aqua;
+}
+
+.list {
+    list-style: none;
+}
+
+.list-item {
+    padding: 12px 8px;
+    color: whitesmoke;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bg-one {
+    background-color: lightcoral;
+}
+
+.bg-one:hover {
+    background-color: orangered;
+}
+
+.bg-two {
+    background-color: lightskyblue;
+}
+
+.bg-two:hover {
+    background-color:blue;
+}
