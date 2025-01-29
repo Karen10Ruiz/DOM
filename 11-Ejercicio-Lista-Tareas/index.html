@@ -16,25 +16,31 @@
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- Fav icon-->
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
     
     <div class="container">
         <h1 class="title">Lista tareas</h1>
-        <input type="text" placeholder="Escribe tu proxima tarea">
-        <button type="submit">Crear tarea</button>
-        <div class="lista-tareas">
-            <p>Estudiar JavaScript</p>
-            <div class="iconos">
-                <i class="bi bi-check2-circle icono-completar"></i>
-                <i class="bi bi-trash icono-eliminar"></i>
+        <input id="taskInput" type="text" placeholder="Escribe tu proxima tarea">
+        <button id="addButton" type="submit">Crear tarea</button>
+        <div class="task-list" id="taskList">
+            <div class="task">
+                <p>Estudiar JavaScript</p>
+                <div class="task-icons">
+                    <i class="bi bi-check2-circle icon-complete"></i>
+                    <i class="bi bi-trash icon-delete"></i>
+                </div>
             </div>
-        </div>
-        <div class="completada">
-            <p>Grabar cortometraje</p>
-            <div class="iconos">
-                <i class="bi bi-check2-circle icono-completar"></i>
-                <i class="bi bi-trash icono-eliminar"></i>
+            <div class="task complete">
+                <p>Para entender la historia de Five Nights at Freddy's hay que olvidarse que estos son juegos y quiero que tomen realmente a esta saga como lo que es. ¿Terror? Sí, pero sobre todo, ciencia ficción.</p>
+                <div class="task-icons">
+                    <i class="bi bi-check2-circle icon-complete"></i>
+                    <i class="bi bi-trash icon-delete"></i>
+                </div>
             </div>
         </div>
     </div>

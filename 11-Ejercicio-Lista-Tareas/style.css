@@ -1,11 +1,113 @@
 * {
-    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Open Sans';
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+    padding: 1rem; /*16px*/
     background-color: cornflowerblue;
 }
 
-h1 {
-    color: rgb(55, 0, 252);
+.container {
+    width: 100%;
+    max-width: 960px;
+    background-color: rgb(57, 202, 224);
+    border: 5px solid #92c5fc;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    color: #005b8f;
+}
+
+#taskInput {
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+#addButton {
+    width: fit-content;
+    padding: 1rem;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 1rem;
+    color:darkblue ;
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#addButton:hover {
+    background-color: #005b8f;
+    color: bisque;
+}
+
+.task-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task {
+    background-color:  #2d559b;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.task p {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: left;
+}
+
+.task-icons {
+    flex-shrink: 0;
+}
+
+.complete {
+    background-color: #009ADA;
+}
+
+.complete p {
+    color: #152747;
+    text-decoration: line-through;
+}
+
+.task-icons i {
+font-size: 1.4rem;
+color: aquamarine;
+cursor: pointer;
+}
+
+.icon-complete:hover {
+    color: rgb(242, 255, 0);
+}
+
+.icon-delete:hover {
+    color: darkred;
 }
